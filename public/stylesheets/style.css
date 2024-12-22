@@ -1,6 +1,8 @@
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  padding: 40px;
+  font: 20px "Didot", "Bodoni MT", "Times New Roman", serif;
+  background-color: #dcb490 !important; 
+  letter-spacing: 0.5px;
 }
 
 a {
@@ -12,7 +14,9 @@ img {
   height: auto; /* сохраняем пропорции */
   max-width: 600px; /* устанавливаем максимальную ширину */
   }
-h4{
-  width: 750px;
-  text-align: justify;
-}
+
+h4, p {
+
+  font-weight: 400;
+  letter-spacing: 2px;
+  text-align: justify;}
