@@ -1,6 +1,6 @@
 <div align="left">
  
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Abril+Fatface&size=30&pause=100&color=000000&vCenter=true&width=250&height=40&lines=Cat+Breeds+Project)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Abril+Fatface&size=30&pause=100&color=000000&vCenter=true&width=270&height=40&lines=Cat+Breeds+Project)](https://git.io/typing-svg)
 
 </div>
 <div align="left">
