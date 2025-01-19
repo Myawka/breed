@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var Breed = require('../models/breed').Breed;
+var checkAuth = require("../middlewares/checkAuth.js");
 
 /* GET users listing. */
 router.get('/', function (req, res, next) {
@@ -8,7 +9,7 @@ router.get('/', function (req, res, next) {
 });
 
 /* Страница пород */
-router.get("/:nick", async function (req, res, next) {
+router.get("/:nick", checkAuth, async function(req, res, next) {
   var breeds = await Breed.find({ nick: req.params.nick });
   console.log(breeds)
   if (!breeds.length) return next(new Error("Порода не найдена на сайте"))
