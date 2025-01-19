@@ -9,11 +9,11 @@ router.get('/', function (req, res, next) {
 
 /* GET login/registration page. */
 router.get('/logreg', function (req, res, next) {
-  res.render('logreg', { title: 'Вход' });
+  res.render('logreg', { title: 'Вход', error: null });
 });
 
 /* POST login/registration page. */
-router.post('/logreg', async function(req, res, next) {
+router.post('/logreg', async function (req, res, next) {
   var username = req.body.username
   var password = req.body.password
   console.log(username);
@@ -33,8 +33,9 @@ router.post('/logreg', async function(req, res, next) {
       req.session.user_id = foundUser._id
       res.redirect('/')
     } else {
-      res.render('logreg', { title: 'Вход' });
+      res.render('logreg', { title: 'Вход', error: 'Пароль неверный' });
     }
+
   }
 });
 
