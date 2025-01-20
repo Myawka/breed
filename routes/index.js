@@ -4,7 +4,7 @@ var User = require('../models/user').User;
 
 /* GET home page. */
 router.get('/', function (req, res, next) {
-  res.render('index', { title: 'Express', counter: req.session.counter });
+  res.render('index', { title: 'Express', picture: "images/cat.jpg", counter: req.session.counter });
 });
 
 /* GET login/registration page. */
